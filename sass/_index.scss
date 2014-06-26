@@ -1,0 +1,525 @@
+
+/**************************************** landing ***************************/
+
+section.landing{
+	width: 70%;
+	padding-left: 15%;
+	padding-right: 15%;
+	height: 440px;
+	padding-top: 80px;
+	background-image: url("../img/head_bg.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	margin-top: -80px;
+	position: relative;
+	//responsive 600
+	@media screen and (max-width: 650px) {
+		width: 95%;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+		height: 550px;
+	}//responsive 600
+	//responsive 400
+	@media screen and (max-width: 400px) {
+		background-position: 20% bottom;
+		height: 440px;
+		padding-top: 20px;
+	}//responsive 400
+	article.slogan{
+		float:left;
+		height: 340px;
+		margin-top: 60px;
+		width: 60%;
+		h1{
+			margin: 0;
+			color: $tume-tekst;
+			font-weight: normal;
+			font-size: 3.5em;
+			white-space: nowrap;
+
+		}
+		p{
+			color: $tume-tekst;
+			font-size: 1.5em;
+		}
+		a.calltoaction{
+			color: $tume-tekst;
+			text-decoration: none;
+			display: block;
+			padding: 15px;
+			background-color: $trans-white;
+			width: 80%;
+			margin-top: 50px;
+			font-size: 1.6em;
+		}
+		//responsive 1250
+		@media screen and (max-width: 1250px) {
+			width: 80%;
+			a.calltoaction{
+				width: 50%;
+			}
+		}//responsive 1250
+		//responsive 900
+		@media screen and (max-width: 900px) {
+			width: 50%;
+			a.calltoaction{
+				display: none;
+			}
+		}//responsive 900
+		//responsive 600
+		@media screen and (max-width: 650px) {
+			width: 100%;
+			h1{
+				white-space: normal;
+			}
+
+		}//responsive 600
+		//responsive 500
+		@media screen and (max-width: 500px) {
+			p{
+				width: 50%;
+				font-size: 1.6em;
+			}
+
+		}//responsive500
+		//responsive 400
+		@media screen and (max-width: 400px) {
+			p{
+				width:100%;
+				font-size: 1.6em;
+				background-color: $trans-white;
+			}
+
+		}//responsive400
+
+	}//article.slogan
+
+	.kaart{
+		position: absolute;
+		width: 509px;
+		height: 390px;
+		right: 10%;
+		z-index: 1;
+		bottom: -42%;
+		text-decoration: none;
+		color: $tume-tekst;
+		-webkit-transition: all 1000ms ease;
+		-moz-transition: all 1000ms ease;
+		-ms-transition: all 1000ms ease;
+		-o-transition: all 1000ms ease;
+		transition: all 1000ms ease;
+		//responsive 900
+		@media screen and (max-width: 900px) {
+			right: 15%;
+		}//responsive 650
+		@media screen and (max-width:650px) {
+			bottom: -38%;
+		}//responsive 650
+		@media screen and (max-width:500px) {
+			display: none;
+		}//responsive 500
+		&:hover{
+			-moz-transform: translateX(0px) translateY(-30px);
+			-webkit-transform: translateX(0px) translateY(-30px);
+			-o-transform: translateX(0px) translateY(-30px);
+			-ms-transform: translateX(0px) translateY(-30px);
+			transform: translateX(0px) translateY(-30px);
+
+		}
+		.bg{
+			background-image: url(../img/hiiumaa.png);
+			height: 390px;
+			width: 509px;
+			z-index: 1;
+			position: absolute;
+			div{
+				position: absolute;
+				font-family: 'source_sans_prosemibold';
+				height: 100px;
+				width: 200px;
+				left: 68%;
+				font-size: 1.6em;
+				line-height: 0.8;
+				margin-left: -100px;
+				top: 25%;
+				.suurem{
+					font-size: 1.2em;
+				}
+			}
+
+		}
+		.nupp{
+			position: absolute;
+			display: block;
+			background-color: $trans-white;
+			right: -70px;
+			text-align: right;
+			font-size: 1.6em;
+			top: 35px;
+			padding: 12px;
+			padding-left: 70px;
+			padding-right: 30px;
+			z-index: 0;
+		}
+	}//kaart
+}//section.landing
+
+.sectionWrapper{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.3em;
+	line-height: 1.6;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	header{
+		position: relative;
+		z-index: 2;
+		h1{
+			font-size: 1.7em;
+			font-weight: normal;
+			
+		}//h1
+	}//header
+
+	//responsive 600
+	@media screen and (max-width: 650px) {
+		width: 95%;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}//responsive 600
+}//sectionwrapper
+
+/**************************************** sissejuhatus ***************************/
+
+
+section.tume{
+	background-color: $tume-bg;
+	position: relative;
+	min-height: 300px;
+	z-index: 2;
+	width: 100%;
+	color: #fff;
+	//sissejuhatus
+	p.sissejuhatus{
+		-moz-column-count: 2;
+		-moz-column-gap: 90px;
+		-webkit-column-count: 2;
+		-webkit-column-gap: 90px;
+		column-count: 2;
+		column-gap: 90px;
+		text-align: justify;
+		@media screen and (max-width: 860px) {
+			-moz-column-count: 1;
+			-moz-column-gap: 90px;
+			-webkit-column-count: 1;
+			-webkit-column-gap: 90px;
+			column-count: 1;
+			column-gap: 90px;
+		}//responsive860
+	}//sissejuhatus
+	header.oks{
+		height: 125px;
+		line-height: 125px;
+		background-image: url("../img/oks.png");
+		background-repeat: no-repeat;
+		background-position: 90% center;
+		//responsive 1250
+		@media screen and (max-width: 1250px) {
+			height: 220px;
+		}//responsive 1250
+		//responsive 1100
+		@media screen and (max-width: 1100px) {
+			height: 220px;
+			background-position: center bottom;
+			line-height: 2;
+		}//responsive 1100
+		@media screen and (max-width: 450px) {
+			height: 280px;
+		}//responsive450
+		h1{
+			height: 125px;
+		}
+	}
+	&:last-of-type:after{
+		display: none;
+	}
+	&:before{
+		content:"";
+		position: absolute;
+		width: 100%;
+		height: 8px;
+		background-image: url(../img/sakk.png);
+		background-repeat: repeat-x;
+		right:0px;
+		top:-8px;
+		background-position: center center;
+	}//after
+	&:after{
+		content:"";
+		position: absolute;
+		width: 100%;
+		height: 8px;
+		background-image: url(../img/sakk.png);
+		background-repeat: repeat-x;
+		left:0px;
+		bottom:-8px;
+		background-position: center center;
+		-moz-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}//before
+}//section.tume
+
+
+/**************************************** MAJAD ***************************/
+section.hele{
+	width: 100%;
+	.maja{
+		height: 300px;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-position: center center;
+		-webkit-background-size: cover;
+		background-size: cover;
+		border: solid 1px $border-color;
+		position: relative;
+		z-index: 1;
+		margin-top: 75px;
+		margin-bottom: 75px;
+		cursor: pointer;
+		cursor: hand;
+		&:hover article.desc{
+			height: 105px;
+		}
+		&:hover h1.majaNimi{
+			top: -60px;
+		}
+		h1.majaNimi{
+			display: block;
+			padding: 0;
+			margin: 0;
+			
+			width: 130px;
+			height: 100px;
+			-webkit-border-radius: 130px;
+			-moz-border-radius: 130px;
+			border-radius: 130px;
+			font-weight: normal;
+			font-size: 1em;
+			padding-top: 30px;
+			line-height: 100px;
+			text-align: center;
+			position: absolute;
+			left:50%;
+			margin-left: -65px;
+			top: -65px;
+			background-color: #fff;
+			-webkit-transition: all 500ms ease;
+			-moz-transition: all 500ms ease;
+			-ms-transition: all 500ms ease;
+			-o-transition: all 500ms ease;
+			transition: all 500ms ease;
+
+		}//h1 p6hi
+		article.desc{
+			height: 105px;
+			background-color:$trans-white;
+			overflow: hidden;
+			position: absolute;
+			bottom:0px;
+			width: 100%;
+			overflow: hidden;
+			height: 0px;
+			-webkit-transition: all 500ms ease;
+			-moz-transition: all 500ms ease;
+			-ms-transition: all 500ms ease;
+			-o-transition: all 500ms ease;
+			transition: all 500ms ease;
+
+			.descText{
+				width: 70%;
+				float:left;
+				p{
+					font-size: 0.7em;
+					line-height: 1.1;
+					padding: 5px;
+					padding-left: 10%;
+					padding-right: 10%;
+				}
+			}
+			h1{
+				height: 105px;
+				line-height: 105px;
+				padding: 0;
+				margin: 0;
+				width: 30%;
+				text-align: center;
+				position: relative;
+				float:left;
+				&:after{
+					content:"";
+					height: 70px;
+					width: 1px;
+					background-color: $border-color;
+					position: absolute;
+					right: 0px;
+					top: 50%;
+					margin-top: -35px;
+				}
+			}
+
+		}//desc
+	}//maja
+}//hele
+
+
+/**************************************** KONTAKT ***************************/
+
+section.tume.kontakt{
+	.left{
+		width: 50%;
+		float:left;
+		@media screen and (max-width: 500px) {
+			width: 100%;
+			height: auto;
+		}//responsive500
+		h1{
+			font-weight: normal;
+			font-size: 1.7em;
+		}
+		.contacts{
+			width: 100%;
+
+			height: 300px;
+			@media screen and (max-width: 500px) {
+				padding-bottom: 20px;
+				height: auto;
+			}//responsive500
+			.container{
+				width: 100%;
+				clear: both;
+				.tag{
+					float:left;
+					font-family: 'source_sans_prosemibold';
+					color: $border-color;
+
+				}//tag
+				.value{
+					float:right;
+					text-align: right;
+					color: #fff;
+				}//value
+			}//container
+		}//contacts
+	}//left
+
+	.right{
+		width: 45%;
+		position: relative;
+		padding-left: 5%;
+		height: 250px;
+		float:right;
+		border-left: solid 1px $border-color;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		@media screen and (max-width: 500px) {
+			width: 100%;
+			height: auto;
+			padding-left: 0;
+			border:none;
+		}//responsive500
+
+	}//right
+
+	footer{
+		width: 100%;
+		clear: both;
+		a.googlemaps{
+			background-image: url("../img/google.png");
+			display: block;
+			height: 42px;
+			width: 42px;
+			float:left;
+			margin-left: 5px;
+			&:hover{
+				-moz-transform: translateY(-5px);
+				-webkit-transform: translateY(-5px);
+				-o-transform: translateY(-5px);
+				-ms-transform: translateY(-5px);
+				transform: translateY(-5px);
+			}
+		}
+		div{
+			float:left;
+			color: $border-color;
+			font-family: 'source_sans_prosemibold';
+			font-size: 0.95em;
+		}//navigeeri lehel
+		nav.footer{
+			float:left;
+			margin-left: 5%;
+			margin-right: 2%;
+			width: 400px;
+			@media screen and (max-width: 500px) {
+				margin: 0;
+			}//responsive500
+			ul{
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+				li{
+					float:left;
+					padding: 0;
+					margin: 0;
+					padding-left: 10%;
+					padding-right: 10%;
+					a{
+						color: $border-color;
+						text-decoration: none;
+						font-size: 0.95em;
+						cursor: pointer;
+						cursor: hand;
+
+					}
+				}
+			}
+			@media screen and (max-width: 500px) {
+				width: 100%;
+				ul{
+					li{
+						float:none;
+						display: block;
+						width: 100%;
+						padding-left: 0;
+						padding-right: 0;
+						padding-top: 5px;
+						padding-bottom: 5px;
+						text-align: center;
+					}
+				}
+			}//responsive500
+		}//nav..footer
+		a.facebook{
+			display: block;
+			float:left;
+			height: 42px;
+			width: 42px;
+			background-image: url("../img/fb.png");
+			background-position: center center;
+			background-repeat: no-repeat;
+			&:hover{
+				-moz-transform: translateY(-5px);
+				-webkit-transform: translateY(-5px);
+				-o-transform: translateY(-5px);
+				-ms-transform: translateY(-5px);
+				transform: translateY(-5px);
+			}
+		}//facebook
+	}
+}//kontakt section

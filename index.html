@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jscript.js"></script>
+<script src="js/min/modalBox.min.js"></script>
+<script src="js/min/jquery.mCustomScrollbar.min.js"></script>
+<script src="js/min/jquery.mousewheel.min.js"></script>
+<script src="js/min/jquery-ui.min.js"></script>
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<header class="main group">
+	<a href=""><div class="logo"></div></a><!-- logo -->
+	<nav class="main">
+		<ul>
+			<li><a href="#info">Info</a></li>
+			<li><a  class="openModal" modalId="gallery">Galerii</a></li>
+			<li><a href="#kontakt">Kontakt</a></li>
+		</ul>
+	</nav><!-- main nav -->
+</header><!-- mainheader -->
+
+<section class="landing group" id="index">
+
+		<article class="slogan">
+			<h1>Kui randud, tule meile!</h1>
+			<p>Oleme veendunud, et parim puhkeelamus algab suurepärasest majutusest.</p>
+			<p>Tulge, veenduge meiega.</p>
+			<a href="#info" class="calltoaction">Tutvu meie majutusvõimalustega.</a>
+		</article><!-- slogan -->
+		
+		<a href="#kaart">
+			<div class="kaart">
+				<div class="bg">
+					<div>Leia meid <br> <span class="suurem">kaardilt!</span></div>
+				</div><!-- bg -->
+				<div class="nupp">Asume Hiiumaal!</div><!-- nupp -->
+			</div><!-- kaart -->
+		</a><!-- kaart -->
+</section><!-- landing section -->
+
+<section class="tume group">
+	<div class="sectionWrapper" >
+		<header class="oks">
+			<h1>Puhka vahvasti looduskaunil Hiiumaal!</h1>
+		</header><!-- header oks -->
+		<p class="sissejuhatus">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, sunt, quo dolor sed officiis repudiandae sint earum dolorem eligendi cumque enim voluptatem omnis doloribus alias corporis est qui. Id, nobis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+		</p>
+		<p class="sissejuhatus">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, sunt, quo dolor sed officiis repudiandae sint earum dolorem eligendi cumque enim voluptatem omnis doloribus alias corporis est qui. Id, nobis! 
+		</p>
+	</div><!-- sectionwrapper-->
+</section><!-- section tume #1 (sisse juhatus) -->
+
+<section class="hele group" id="info">
+	<div class="sectionWrapper">
+		<header>
+			<h1>Tee tutvust meie armsate puhkemajadega</h1>
+		</header><!-- sectionheader -->
+
+		<div class="maja openModal" modalId="maja1" style="background-image: url(img/puhkemaja.jpg);">
+			<h1 class="majaNimi">Tiigi 37</h1>
+			<article class="desc">
+				<h1>Tiigi 37</h1>
+				<div class="descText">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, molestiae, itaque aut ab ut harum voluptatibus.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</div><!-- desc text container -->
+			</article><!-- maja description -->
+		</div><!-- maja #1-->
+
+		<div class="maja openModal" modalId="maja2" style="background-image: url(img/puhkemaja.jpg);">
+			<h1 class="majaNimi">Tiigi 37</h1>
+			<article class="desc">
+				<h1>Tiigi 37</h1>
+				<div class="descText">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, molestiae, itaque aut ab ut harum voluptatibus.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</div><!-- desc text container -->
+			</article><!-- maja description -->
+		</div><!-- maja #2 -->
+	</div><!--sectionwrapper-->
+</section><!-- section hele #2 (info, majad)-->
+<!-- ************************************************************************************************** -->
+
+<!--                                    MODAL BOXES                                    -->
+
+<!--**********************************************************************************************-->
+
+<!-- *************************HOUSES ******************************-->
+
+<div class="modalbox" id="maja2" style="display:none"> 
+	<section class="pildid">
+		<div class="suurpiltContainer">
+			<div class="suurPilt" style="background-image: url(img/puhkemaja.jpg);"></div><!-- suurpilt-->
+		</div><!-- suurpiltcontainer -->
+		<h1 class="pilt">Tiigi 37</h1>
+		<div class="pisipildid scrollbar">
+			<div class="pisipilt" pilt="img/puhkemaja.jpg" style="background-image: url(img/puhkemaja.jpg);"></div>
+			<div class="pisipilt" pilt="img/house.jpg" style="background-image: url(img/house.jpg);"></div>
+			<div class="pisipilt" pilt="img/puhkemaja.jpg" style="background-image: url(img/puhkemaja.jpg);"></div>
+			<div class="pisipilt" pilt="img/house.jpg" style="background-image: url(img/house.jpg);"></div>
+			<div class="pisipilt" pilt="img/puhkemaja.jpg" style="background-image: url(img/puhkemaja.jpg);"></div>
+		</div><!-- pisipildid-->
+	</section><!-- pildid -->
+
+	<div class="left">
+		<div class="rida group">
+			<div class="tag">Magamiskohti</div>
+			<div class="value">X arv</div>
+		</div><!-- rida -->
+
+		<div class="rida group">
+			<div class="tag">Magamiskohti</div>
+			<div class="value">X arv</div>
+		</div><!-- rida -->
+
+		<div class="rida group">
+			<div class="tag">Magamiskohti</div>
+			<div class="value">X arv</div>
+		</div><!-- rida -->
+
+		<a href="http://goo.gl/maps/4PRdE" target="_blank" class="asukoht">Vaata asukohta</a>
+	</div><!-- left -->
+	<div class="right">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, nihil ducimus magnam suscipit unde alias debitis provident nobis quaerat reiciendis doloremque possimus rerum in totam sed.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, nihil ducimus magnam suscipit unde alias debitis provident nobis quaerat reiciendis doloremque possimus rerum in totam sed.</p>
+	</div><!-- right -->
+	<div class="closeModal">Avalehele</div>
+</div>
+
+
+<!-- modalbox for maja1 -->
+
+
+<div class="modalbox" id="maja1" style="display:none"> 
+	<section class="pildid">
+		<div class="suurpiltContainer">
+			<div class="suurPilt" style="background-image: url(img/puhkemaja.jpg);"></div><!-- suurpilt-->
+		</div><!-- suurpiltcontainer -->
+		<h1 class="pilt">Tiigi 37</h1>
+		<div class="pisipildid scrollbar">
+			<div class="pisipilt" pilt="img/puhkemaja.jpg" style="background-image: url(img/puhkemaja.jpg);"></div>
+			<div class="pisipilt" pilt="img/house.jpg" style="background-image: url(img/house.jpg);"></div>
+			<div class="pisipilt" pilt="img/puhkemaja.jpg" style="background-image: url(img/puhkemaja.jpg);"></div>
+			<div class="pisipilt" pilt="img/house.jpg" style="background-image: url(img/house.jpg);"></div>
+			<div class="pisipilt" pilt="img/puhkemaja.jpg" style="background-image: url(img/puhkemaja.jpg);"></div>
+		</div><!-- pisipildid-->
+	</section><!-- pildid -->
+
+	<div class="left">
+		<div class="rida group">
+			<div class="tag">Magamiskohti</div>
+			<div class="value">X arv</div>
+		</div><!-- rida -->
+
+		<div class="rida group">
+			<div class="tag">Magamiskohti</div>
+			<div class="value">X arv</div>
+		</div><!-- rida -->
+
+		<div class="rida group">
+			<div class="tag">Magamiskohti</div>
+			<div class="value">X arv</div>
+		</div><!-- rida -->
+
+		<a href="http://goo.gl/maps/4PRdE" target="_blank" class="asukoht">Vaata asukohta</a>
+	</div><!-- left -->
+	<div class="right">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, nihil ducimus magnam suscipit unde alias debitis provident nobis quaerat reiciendis doloremque possimus rerum in totam sed.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, nihil ducimus magnam suscipit unde alias debitis provident nobis quaerat reiciendis doloremque possimus rerum in totam sed.</p>
+	</div><!-- right -->
+	<div class="closeModal">Avalehele</div>
+</div>
+
+<!-- modalbox for maja2 -->
+
+
+<!-- *************************Gallery******************************-->
+
+<div class="modalbox" id="gallery" style="display:none">
+	
+	<div class="galleryModalContainer">
+
+		<div class="galleryModal" id="galleryIntro">
+			<div class="closeModal x"></div><!-- close -->
+			<div class="left">
+				<div class="info">Kliki pildil ja tutvu lähemalt</div>
+				<a href="#galleryItself" class="pisipilt" pilt="img/puhkemaja.jpg" style="background-image: url(img/puhkemaja.jpg);"></a>
+				<a href="#galleryItself" class="pisipilt" pilt="img/house.jpg" style="background-image: url(img/house.jpg);"></a>
+				<a href="#galleryItself" class="pisipilt" pilt="img/puhkemaja.jpg" style="background-image: url(img/puhkemaja.jpg);"></a>
+				<a href="#galleryItself" class="pisipilt" pilt="img/house.jpg" style="background-image: url(img/house.jpg);"></a>
+				<a href="#galleryItself" class="pisipilt" pilt="img/puhkemaja.jpg" style="background-image: url(img/puhkemaja.jpg);"></a>
+				<a href="#galleryItself" class="pisipilt" pilt="img/puhkemaja.jpg" style="background-image: url(img/puhkemaja.jpg);"></a>
+				<a href="#galleryItself" class="pisipilt" pilt="img/house.jpg" style="background-image: url(img/house.jpg);"></a>
+				<a href="#galleryItself" class="pisipilt" pilt="img/puhkemaja.jpg" style="background-image: url(img/puhkemaja.jpg);"></a>
+				<a href="#galleryItself" class="pisipilt" pilt="img/house.jpg" style="background-image: url(img/house.jpg);"></a>
+			</div><!-- left -->
+			<div class="right">
+				<h1>Pealkiri pikemale kirjutisele</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, reprehenderit, eius, reiciendis dolores aspernatur ut error voluptatibus illo magni quae exercitationem minima laboriosam alias ea beatae! Impedit, aperiam, laboriosam a mollitia itaque enim ullam harum saepe consectetur dolorum possimus delectus pariatur odio ipsa rem corporis minus dolor soluta praesentium aliquam.</p>
+				
+			</div><!-- rigth -->
+			
+
+		</div><!-- intro -->
+		
+		<div class="galleryModal" id="galleryItself">
+			
+			<div class="closeModal x"></div><!-- close -->
+			<section class="pildid">
+				<a href="#galleryIntro"class="info">Tagasi</a>
+				<div class="suurpiltContainer">
+					<div class="suurPilt" style="background-image: url(img/puhkemaja.jpg);"></div><!-- suurpilt-->
+					<h1 class="pilt">Tiigi 37</h1>
+				</div><!-- suurpiltcontainer -->
+
+				<div class="pisipildid scrollbar">
+					<div class="pisipilt" pilt="img/puhkemaja.jpg" style="background-image: url(img/puhkemaja.jpg);"></div>
+					<div class="pisipilt" pilt="img/house.jpg" style="background-image: url(img/house.jpg);"></div>
+					<div class="pisipilt" pilt="img/puhkemaja.jpg" style="background-image: url(img/puhkemaja.jpg);"></div>
+					<div class="pisipilt" pilt="img/house.jpg" style="background-image: url(img/house.jpg);"></div>
+					<div class="pisipilt" pilt="img/puhkemaja.jpg" style="background-image: url(img/puhkemaja.jpg);"></div>
+				</div><!-- pisipildid-->
+			</section><!-- pildid -->
+		</div><!-- galleryItself" -->
+		
+	</div><!--gallerymodalcontainer-->
+
+</div><!-- modalbox for gallery -->
+
+
+<!-- ************************************************************************************************** -->
+
+<!--                                    MODAL BOXES     END                                  -->
+
+<!--**********************************************************************************************-->
+
+<section class="tume group kontakt" id="kontakt">
+	<div class="sectionWrapper">
+		<header><h1>Võta meiega ühendust!</h1></header>
+		<div class="left">
+			
+			<div class="contacts">
+				<div class="container">
+					<div class="tag">Paikneme</div>
+					<div class="value">Tiig 37, Kärdla, Hiiumaa <br> Allika 6, Kärdla, 92413, Hiiumaa</div>
+				</div><!-- container -->
+				
+				<div class="container">
+					<div class="tag">Tel.</div>
+					<div class="value">50 50 123 45</div>
+				</div><!-- container-->
+				
+				<div class="container">
+					<div class="tag">E-mail</div>
+					<div class="value">email@email.com</div>
+				</div><!-- container -->
+
+			</div><!-- contacts -->
+		</div><!-- left -->
+
+		<div class="right" id="kaart">
+
+			<iframe width='100%' height='250px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/martinappo.i01bphg3/attribution,zoompan,zoomwheel.html'></iframe>
+		</div><!-- right -->
+
+		<footer class="group">
+			<div>Navigeeri lehel</div>
+			<nav class="footer">
+				<ul>
+					<li><a href="#info">Info</a></li>
+					<li><a  class="openModal" modalId="gallery">Galerii</a></li>
+					<li><a href="#index">Pealeht</a></li>
+				</ul>
+			</nav><!-- footer nav -->
+			<a href="" class="facebook"></a><!-- facebook -->
+			<a href="http://goo.gl/maps/4PRdE" target="_blank" class="googlemaps"></a>
+		</footer>
+	</div>
+</section><!-- section tume #3 (kontakt)-->
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+header.main{
+	width: 70%;
+	padding-left: 15%;
+	padding-right: 15%;
+	height: 130px;
+	position: relative;
+	z-index: 3;
+	.logo{
+		width: 230px;
+		height: 70px;
+		margin-top: 35px;
+		float:left;
+		border-right: solid 1px $border-color;	
+		background-image: url("../img/logo.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center center;
+	}//logo
+	nav.main{
+		height: 130px;
+		margin-left: 50px;
+		float:left;
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			li{
+				margin: 0;
+				padding: 0;
+				display: inline-block;
+				padding-left: 20px;
+				padding-right: 20px;
+				a{
+					color: $main-nav-text;
+					text-decoration: none;
+					line-height: 130px;
+					display: block;
+					font-size: 1.2em;
+					cursor: pointer;
+					cursor: hand;
+				}
+			}
+		}
+	}
+
+}//header.main
+
+
+
+//RESPONSIVE *************************************************************************************************
+
+header.main{
+	width: 70%;
+	padding-left: 15%;
+	padding-right: 15%;
+	height: 130px;
+	position: relative;
+	z-index: 3;
+	.logo{
+		width: 230px;
+		height: 70px;
+		margin-top: 35px;
+		float:left;
+		border-right: solid 1px $border-color;	
+		background-image: url("../img/logo.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center center;
+
+	}//logo
+	nav.main{
+		height: 130px;
+		margin-left: 50px;
+		float:left;
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			li{
+				margin: 0;
+				padding: 0;
+				display: inline-block;
+				padding-left: 20px;
+				padding-right: 20px;
+				a{
+					color: $main-nav-text;
+					text-decoration: none;
+					line-height: 130px;
+					display: block;
+					font-size: 1.2em;
+					cursor: pointer;
+					cursor: hand;
+				}
+			}
+		}
+	}
+	//responsive 900
+	@media screen and (max-width: 900px) {
+		height: 180px;
+		.logo{
+			height: 100px;
+			width: 250px;
+			//responsive 500
+			@media screen and (max-width:500px) {
+				width: 150px;
+			}//responsive 500
+		}
+		nav.main{
+			padding-top: 20px;
+			font-size: 1.1em;
+			//responsive 500
+			@media screen and (max-width:500px) {
+			 	margin-left: 9%;
+			}//responsive 500
+			ul{
+				li{
+					display:block;
+					text-align: right;
+					a{
+						line-height: 2;
+					}
+				}
+			}
+		}
+	}//responsive 900
+	//responsive 600
+	@media screen and (max-width: 600px) {
+		width: 95%;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+	}//responsive 600
+
+}//header.main

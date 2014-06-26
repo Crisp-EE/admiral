@@ -1,0 +1,336 @@
+.modalbox{
+	width: 80%;
+	height: 80%;
+	background-color: #FFF;
+	overflow: auto;
+	//responsive 1000
+	@media screen and (max-width: 1000px) {
+		width: 100%;
+		height: 90%;
+	}//responsive1000
+	section.pildid{
+		width: 100%;
+		height: 65%;
+		position: relative;
+		h1.pilt{
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			background-color: $trans-white;
+			display: block;
+			height: 70px;
+			margin: 0;
+			padding: 0;
+			line-height: 70px;
+			text-align: center;
+			width: 30%;
+			@media screen and (max-width: 500px) {
+				width: 30%;
+				top: 0px;
+				left:0px;
+				z-index: 2;
+				font-size: 1.2em;
+				height: 30px;
+				line-height: 30px;
+			}//responsive500
+		}
+		.suurpiltContainer{
+			height: 100%;
+			width: 80%;
+			float:left;
+			opacity: 1;
+			position: relative;
+			@media screen and (max-width: 500px) {
+				display:none;
+			}//responsive500
+		}
+		.suurPilt{
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			width: 100%;
+			height: 100%;	
+			position: absolute;
+			right: 0px;
+			top:0px;
+			@media screen and (max-width: 500px) {
+				display:none;
+			}
+		}
+		.pisipildid{
+			width: 20%;
+			height: 100%;
+			overflow:auto;
+			float:left;
+			position: relative;
+
+			.pisipilt{
+				height: 80px;
+				cursor: hand;
+				cursor: pointer;
+				background-size: cover;
+				background-position: center center;
+				margin: 10px;
+				margin-right: 0px;
+			}
+			@media screen and (max-width: 500px) {
+				width: 100%;
+				float:none;
+				height: 200px;
+				overflow-y: hidden;
+				overflow-x: auto;
+				.pisipilt{
+					width: 100%;
+					height: 200px;
+					display: inline-block;
+				}
+			}//responsive1000
+		}
+	}//pildid
+	.closeModal{
+		clear: both;
+		float:right;
+		padding-right: 5%;
+		cursor: hand;
+		cursor: pointer;
+		@media screen and (max-width: 500px) {
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			background-color: $trans-white;
+			font-size: 1.2em;
+		}
+	}
+	.left{
+		width: 20%;
+		float:left;
+		overflow: hidden;
+		padding-left: 5%;
+		padding-right: 5%;
+		margin-top: 2%;
+		padding-bottom: 2%;
+		position: relative;
+			@media screen and (max-width: 500px) {
+				width: 90%;
+				float:none;
+
+				&:after{
+					display:none;
+					} 
+			}//responsive500
+		.asukoht{
+			text-decoration: none;
+			color: $tume-tekst;
+			font-family: 'source_sans_prosemibold';
+			display: block;
+			font-size: 1.2em;
+			margin-top: 20px;
+		}
+		&:after{
+			content:"";
+			height: 100%;
+			position: absolute;
+			width: 1px;
+			right: 0;
+			top:0px;
+			background-color: $border-color;
+		}
+		.rida{
+			width: 100%;
+			clear: both;
+			margin-bottom: 10px;
+			.tag{
+				float:left;
+				font-family: 'source_sans_prosemibold';
+
+			}//tag
+			.value{
+				float:right;
+			}//value
+		}//rida
+
+	}
+
+	.right{
+		width: 60%;
+		padding-top: 2%;
+		padding-left: 5%;
+		padding-right: 5%;
+		float:right;
+		overflow: hidden;
+		@media screen and (max-width: 500px) {
+			width: 90%;
+			float:none;
+			font-size: 1.2em;
+			text-align: justify;
+		}
+		p{
+			margin-top: 0px;
+			padding-top: 0px;
+		}
+	}
+}//modalbox
+
+// GALERII MODALBO X***************************************
+.modalbox#gallery{
+	position: relative;
+	overflow-x:hidden;
+	overflow-y: auto;
+	width: 100%;
+	height: 90%;
+	.closeModal.x{
+		width: 22px;
+		height: 22px;
+		position: absolute;
+		background-image: url("../img/x.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		right: -0px;
+		top: 20px;
+
+		@media screen and (max-width: 500px) {
+			top:0px;
+			left: 0%;
+			padding: 5px;
+			background-position: center center;
+			z-index: 2;
+			position: fixed;
+			width: 100%;
+		}//responsive1000
+	}
+	.galleryModalContainer{
+		width: 200%;
+		position: relative;
+		height: 100%;
+		.closeModal.tekst{
+			position: fixed;
+			right:0px;
+			bottom: 11%;
+			z-index: 9999;
+		}
+	}
+	.galleryModal{
+		display: inline-block;
+		width: 40%;
+		padding-right: 5%;
+		position: relative;
+		padding-left: 5%;
+		height: 95%;
+		z-index: 55;
+		float:left;
+		@media screen and (max-width: 1000px) {
+			width: 46%;
+			padding-left: 2%;
+			padding-right: 2%;
+		}//responsive1000
+		.info{
+			position: absolute;
+			left:0%;
+			top: -25px;
+			text-decoration: none;
+			color: $tume-tekst;
+			z-index: 999999;
+			font-size: 0.9em;
+			font-family: 'source_sans_prosemibold';
+				@media screen and (max-width: 500px) {
+					top: -10px;
+				}//responsive1000
+		}
+
+	}//gallerymodal
+	#galleryIntro{
+		position: relative;
+		height: 100%;
+		
+		.left{
+			width:50%;
+			float:left;
+			overflow: visible;
+			position: relative;
+			height: 83%;
+			padding: 0;
+			margin: 0;
+			margin-top: 7%;
+			&:after{
+				display:none;
+
+			}
+
+			.pisipilt{
+				width: 30%;
+				height: 30%;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				float:left;
+				margin: 1%;
+				margin-left: 0px;
+				margin-right: 2%;
+			}
+		}//left
+		.right{
+			width:50%;
+			padding: 0;
+			margin: 0;
+			height: 83%;
+			padding-top: 7%;
+			float:right;
+			p{
+				line-height: 2;
+			}
+			
+			h1{
+				padding-top: 0px;
+				margin: 0;
+				margin-bottom: 20px;
+			}
+		}
+		//responsive
+		@media screen and (max-width: 500px) {
+			.right{
+				width: 100%;
+				height: auto;
+			}
+			.left{
+				width: 100%;
+				height: 80%;
+				padding-top: 10%;
+			}
+		}//responsive
+	}//galleryintro
+	#galleryItself{
+		position: relative;
+		.suurpiltContainer{
+			h1.pilt{
+				background-color: transparent;
+				text-align: left;
+				font-size: 1em;
+				bottom: -10%;
+				font-family: 'source_sans_proregular';
+				font-weight: normal;
+			}
+		}
+		.pildid{
+			height: 80%;
+			margin-top: 10%;
+		}
+		.pisipildid{
+			.pisipilt{
+				height: 150px;
+			}
+		}
+		//responsive
+		@media screen and (max-width: 500px) {
+			.suurpiltContainer{
+				display:none;
+			}
+			.pisipildid{
+				height: 100%;
+				.pisipilt{
+					width: 100%;
+					height: 200px;
+				}
+			}
+		}//responsive
+	}//galleryitself
+}//modalboxgallery
